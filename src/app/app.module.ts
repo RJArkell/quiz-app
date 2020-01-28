@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule, MatButtonModule } from '@angular/material';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -28,7 +29,10 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes),
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

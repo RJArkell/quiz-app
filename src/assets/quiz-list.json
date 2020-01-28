@@ -1,7 +1,7 @@
 [
   {
-    "label": "Maths",
-    "name": "maths",
+    "label": "Math",
+    "name": "math",
     "description": "Questions about math",
     "fileName": "math.json"
   },
